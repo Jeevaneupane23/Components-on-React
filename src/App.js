@@ -5,6 +5,9 @@ import DropDown from "./Components/DropDown";
 function App(){
   const [selection,setSelection]=useState(null); 
 
+ 
+  
+
 
   function handleSelect(option){
     setSelection(option);
@@ -38,6 +41,7 @@ function App(){
     <div className="flex">
     <DropDown options={options} onChange={handleSelect} value={selection}/>
     <DropDown options={options} onChange={handleSelect} value={selection}/>
+    
     </div>
   )
 }
