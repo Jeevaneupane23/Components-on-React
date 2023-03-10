@@ -1,21 +1,31 @@
+import { useState } from "react";
 import DropDown from "./Components/DropDown";
 
 
 function App(){
+  const [selection,setSelection]=useState(null); 
+
+
+  function handleSelect(option){
+    setSelection(option);
+
+    
+
+  }
 
   const options=[
     {
-      id:1,
+      
       label:"Red",
       value:"red"
     },
     {
-      id:2,
+      
       label:"Green",
       value:"green"
     },
     {
-      id:3,
+      
       label:"Blue",
       value:"blue"
     }
@@ -25,7 +35,10 @@ function App(){
 
 
   return (
-    <DropDown options={options}/>
+    <div className="flex">
+    <DropDown options={options} onChange={handleSelect} value={selection}/>
+    <DropDown options={options} onChange={handleSelect} value={selection}/>
+    </div>
   )
 }
 
