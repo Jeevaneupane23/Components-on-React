@@ -8,7 +8,7 @@ import {GoStar} from 'react-icons/go'
 function ButtonPage() {
 
   const handleClick=()=>{
-    console.log("Button was clicked");
+    
   }
   return (
     <div>
