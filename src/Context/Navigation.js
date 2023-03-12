@@ -11,6 +11,7 @@ function NavigationProvider({ children }) {
             setCurrentPath(window.location.pathname);
 
         }
+        
         window.addEventListener("popstate", handler);
 
 
