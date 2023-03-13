@@ -8,7 +8,8 @@ function SideBar(){
         {label:"DropDown",path:"/"},
         {label:"Accordion",path:"/accordion"},
         {label:'Buttons',path:"/button"},
-        {label:'Modal',path:'/modal'}
+        {label:'Modal',path:'/modal'},
+        {label:'Table',path:'/table'},
 
     ]
 
